@@ -22,19 +22,22 @@ The project utilizes a neural network model to analyze images and produce releva
 Ensure you have Python installed on your system. Install the necessary packages using:
 
 ```bash
-
-
-## pip install -r requirements.txt
-
-Running the Application
+pip install -r requirements.txt
+```
+## Running the Application
 To generate captions for your images:
 
 Place your images in the appropriate directory.
-
+```bash
 Run the app2.py script:
-
-bash
-Copy
-Edit
 python app2.py
+```
+
 Follow the on-screen instructions to input your image and receive the generated caption.
+
+## Model Architecture
+The image captioning model combines a CNN for feature extraction from images and an RNN (specifically, an LSTM) for generating text sequences. The architecture is visualized in the model.png file.
+
+## Evaluation
+The model's performance is evaluated using BLEU scores, which are provided in the bleu_scores.txt file.
+
